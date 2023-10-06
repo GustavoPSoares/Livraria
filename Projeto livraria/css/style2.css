@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(219, 8, 8);	
+}	
+
+.center {
+	max-width: 1480px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear {
+	clear: both;
+}
+
+
+header {
+	background: black;
+	padding: 12px 0;
+}
+
+/*
+	Menu 1 - Header
+*/
+
+.header-left {
+	float: left;
+}
+
+.header-left img {
+	max-width: 120px;
+}
+
+
+.menu-header {
+	position: relative;
+	display: inline-block;
+	margin-left: 30px;
+	
+}
+
+.menu-header li {
+	display: inline-block;
+	margin-right: 11px;
+	height: 10px;
+}
+
+.menu-header a {
+	color: #795010;
+	text-decoration: none;
+}
+.contanier-wrapper{
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contanier{
+	background: black;
+}
+
+.input-wrapper{
+	padding: 8px 12px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background-color: rgb(0, 0, 0);
+	border-radius: 16px;
+	border: 3px;
+    border-style: solid;
+    border-color: #795010;
+
+}
+
+.input-wrapper i{
+	color:#795010;
+	cursor: pointer;
+	
+}
+
+.input-wrapper input{
+	background-color: transparent;
+	border: none;
+	color:#795010;
+	font-size: 20px;
+}
+
+.input-wrapper input:focus-visible{
+	outline: none;
+}
+/**/
+
+.header-right {
+	margin-top: 10px;
+	float: right;
+	font-size: 20px;
+}
+
+#txtBusca {
+	float: left;
+	background-color: transparent;
+	padding-left: 5px;
+	font-size: 18px;
+	border: none;
+	height: 32px;
+	width: 226px;
+}
+
+#btnBusca {
+	float: left;
+	cursor: pointer;
+}
+
+#divBusca img {
+	float: left;
+}
+
+#divBusca {
+	border: solid 10px rgba(47, 79, 79, 0.8);
+	border-radius: 10px;
+	height: 37px;
+	width: 400px;
+}
+.menu-icones{
+	color: #795010;
+	font-size: 80px;
+}
+
+.icone {
+	color: #795010;
+	font-size: 50px;
+	margin-right: 30px;
+
+	
+
+
+}
+
+
+
+.header-right a {
+	color: #795010;
+	text-decoration: none;
+	
+
+}
+
+
+/********************corpo***********************/
+
+
+.layout {
+	text-align: center;
+}
+
+.atalhos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+/**************carrossel*****************/
+
+
+section.vitrine .vitrine-flex{
+	width: 40%;
+	margin-left: 4%;
+	position: relative;
+	z-index: 4;
+}
+
+
+.vitrine-single-banner{
+	width: 100%;
+	padding-top: calc(16.6% / 2);
+	float: left;
+	position: relative;
+}
+
+.vitrine-wraper{
+	position: absolute;
+	left: 20px;
+	top: 0;
+	width: 70px;
+	border-radius: 100%;
+	height: 70px;
+	height: 70px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.vitrine-wraper:hover{
+	transition: 1s;
+	transform:scale(1.2,1.2);
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	.menu-header{display: none;}
+}
